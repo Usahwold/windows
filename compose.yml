@@ -3,11 +3,9 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "11"
+      VERSION: "https://archive.org/download/windows-10-lite-edition-19h2-x64/Windows%2010%20Lite%20Edition%2019H2%20x64.iso"
       RAM_SIZE: "12G"
       CPU_CORES: "4"
-      USERNAME: "bill"
-      PASSWORD: "gates"
     devices:
       - /dev/kvm
       - /dev/net/tun
